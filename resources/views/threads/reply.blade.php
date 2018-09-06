@@ -1,5 +1,5 @@
 @foreach($thread->replies as $reply)
-    <div class="card">
+    <div class="card mb-3">
         <div class="card-header">
             <a href="#">
                 {{ $reply->owner->name }}
