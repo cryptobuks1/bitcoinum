@@ -18,7 +18,7 @@
                             </div>
                             <div class="card-footer d-flex justify-content-between p-0">
                                 <div class="p-2">
-                                    <a href="#">{{ $thread->creator->name }}</a>: {{ $thread->created_at->diffForHumans() }}
+                                <a href="/profiles/{{ $thread->creator->name }}">{{ $thread->creator->name }}</a>: {{ $thread->created_at->diffForHumans() }}
                                 </div>
                                 <div class="p-2">
                                     <a href="{{ $thread->path() }}">
